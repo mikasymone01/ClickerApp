@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/panda_img"
+    tools:context=".MainActivity"
+
+    >
+
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/counterText"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <ImageButton
+        android:id="@+id/add_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bamboo"
+        android:text="@string/buttonText"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/counter"
+        app:layout_constraintStart_toStartOf="@+id/counter"
+        app:layout_constraintTop_toBottomOf="@+id/counter"
+        android:contentDescription="@string/add_btn_desc" />
+
+    <ImageButton
+        android:id="@+id/update_button"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="@string/update_btn"
+        android:background="@drawable/bamboo_upgrade"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/counter"
+        app:layout_constraintEnd_toEndOf="@+id/counter"
+        app:layout_constraintStart_toStartOf="@+id/counter"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/upgrade_add_button_desc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

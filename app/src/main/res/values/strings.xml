@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Clicker App</string>
+    <string name="counterText">0</string>
+    <string name="buttonText">Add 1</string>
+    <string name="update_btn">Update Clicker</string>
+    <string name="add_btn_desc">Press to add to counter</string>
+    <string name="upgrade_add_button_desc">Upgrade add button</string>
+</resources>
